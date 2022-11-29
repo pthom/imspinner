@@ -44,8 +44,7 @@ namespace ImSpinner
     void SpinnerClock(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
                       const ImColor &bg = 0xffffff80, float speed = 2.8f);
 
-    void
-    SpinnerPulsar(const char *label, float radius, float thickness, const ImColor &bg = 0xffffff80, float speed = 2.8f,
+    void SpinnerPulsar(const char *label, float radius, float thickness, const ImColor &bg = 0xffffff80, float speed = 2.8f,
                   bool sequence = true);
 
     void SpinnerDoubleFadePulsar(const char *label, float radius, float /*thickness*/, const ImColor &bg = 0xffffff80,
@@ -57,8 +56,7 @@ namespace ImSpinner
     void SpinnerFadePulsar(const char *label, float radius, const ImColor &color = 0xffffffff, float speed = 2.8f,
                            int rings = 2);
 
-    void
-    SpinnerDots(const char *label, float *nextdot, float radius, float thickness, const ImColor &color = 0xffffffff,
+    void SpinnerDots(const char *label, float *nextdot, float radius, float thickness, const ImColor &color = 0xffffffff,
                 float speed = 2.8f, size_t dots = 12, size_t mdots = 6, float minth = -1.f);
 
     void SpinnerVDots(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
@@ -79,8 +77,7 @@ namespace ImSpinner
     void SpinnerRotateDots(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
                            float speed = 2.8f, int dots = 2);
 
-    void
-    SpinnerTwinAng(const char *label, float radius1, float radius2, float thickness, const ImColor &color1 = 0xffffffff,
+    void SpinnerTwinAng(const char *label, float radius1, float radius2, float thickness, const ImColor &color1 = 0xffffffff,
                    const ImColor &color2 = 0xff0000ff, float speed = 2.8f, float angle = IM_PI);
 
     void SpinnerFilling(const char *label, float radius, float thickness, const ImColor &color1 = 0xffffffff,
@@ -102,19 +99,16 @@ namespace ImSpinner
     void SpinnerIncFullDots(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
                             float speed = 2.8f, size_t dots = 4);
 
-    void
-    SpinnerFadeBars(const char *label, float w, const ImColor &color = 0xffffffff, float speed = 2.8f, size_t bars = 3,
+    void SpinnerFadeBars(const char *label, float w, const ImColor &color = 0xffffffff, float speed = 2.8f, size_t bars = 3,
                     bool scale = false);
 
-    void
-    SpinnerBarsRotateFade(const char *label, float rmin, float rmax, float thickness, const ImColor &color = 0xffffffff,
+    void SpinnerBarsRotateFade(const char *label, float rmin, float rmax, float thickness, const ImColor &color = 0xffffffff,
                           float speed = 2.8f, size_t bars = 6);
 
     void SpinnerBarsScaleMiddle(const char *label, float w, const ImColor &color = 0xffffffff, float speed = 2.8f,
                                 size_t bars = 3);
 
-    void
-    SpinnerAngTwin(const char *label, float radius1, float radius2, float thickness, const ImColor &color = 0xffffffff,
+    void SpinnerAngTwin(const char *label, float radius1, float radius2, float thickness, const ImColor &color = 0xffffffff,
                    const ImColor &bg = 0xffffff80, float speed = 2.8f, float angle = IM_PI, size_t arcs = 1);
 
     void SpinnerArcRotation(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
@@ -192,8 +186,7 @@ namespace ImSpinner
     void SpinnerRotateGear(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
                            float speed = 2.8f, size_t pins = 12);
 
-    void
-    SpinnerAtom(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff, float speed = 2.8f,
+    void SpinnerAtom(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff, float speed = 2.8f,
                 int elipses = 3);
 
     void SpinnerRotatedAtom(const char *label, float radius, float thickness, const ImColor &color = 0xffffffff,
