@@ -44,6 +44,11 @@
 #include "imgui.h"
 #include "imgui_internal.h"
 
+// 1.93: ImDrawListFlags was merged into ImDrawFlags
+#if IMGUI_VERSION_NUM < 19291
+#define ImDrawFlags_AAFill      ImDrawListFlags_AntiAliasedFill
+#endif
+
 namespace ImSpinner
 {
     static const ImColor white{1.f, 1.f, 1.f, 1.f};
@@ -917,8 +922,8 @@ namespace ImSpinner
       window->DrawList->PathClear();
       window->DrawList->PathArcTo(centre, radius1, abegin, aend, num_segments * 2);
 
-      ImDrawListFlags save = window->DrawList->Flags;
-      window->DrawList->Flags &= ~ImDrawListFlags_AntiAliasedFill;
+      ImDrawFlags save = window->DrawList->Flags;
+      window->DrawList->Flags &= ~ImDrawFlags_AAFill;
         
       window->DrawList->PathFillConvex(color_alpha(color, 1.f));
 
